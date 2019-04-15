@@ -1,0 +1,39 @@
+.dead{
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  border: solid 1px lightgray;
+  padding: 0px;
+  resize: none;
+}
+
+.alive{
+  height: 15px;
+  width: 15px;
+  background-color: seagreen;
+  border: solid 1px lightgray;
+  padding: 0px;
+  resize: none;
+  
+}
+
+.board{
+  white-space: nowrap;
+  table-layout: fixed;
+  width: 10px;
+  padding: 20px;
+  margin: auto;
+}
+
+.row{
+  padding: 0px;
+}
+
+.controls{
+  margin: auto;
+  white-space: nowrap;
+}
+
+.controlbutton{
+  margin: 3px;
+}
