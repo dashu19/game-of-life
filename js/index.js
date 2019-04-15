@@ -131,20 +131,20 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
         for (let j = 0; j < this.state.numcols; j++) {
           newrow.push(React.createElement("td", { className: this.state.mydata[i][j], onClick: () => this.changeCell(i, j) }));
         }
-        newboard.push(React.createElement("tr", { className: "row" }, newrow));
+        newboard.push(React.createElement("tr", { className: "gamerow" }, newrow));
       }
-      return React.createElement("table", { className: "board" }, newboard);
+      return React.createElement("table", { className: "gameboard" }, newboard);
     });this.state = { mydata: this.createRandomData(30, 30), numrows: 30, numcols: 30 };}
 
   render() {
     return (
       React.createElement("div", null,
       this.createBoard(),
-      React.createElement("table", { className: "controls" },
-      React.createElement("button", { className: "controlbutton", onClick: () => this.startGen() }, "Start"),
-      React.createElement("button", { className: "controlbutton", onClick: () => this.stopGen() }, "Stop"),
-      React.createElement("button", { className: "controlbutton", onClick: () => this.seedRandom() }, "Randomize"),
-      React.createElement("button", { className: "controlbutton", onClick: () => this.seedBlank() }, "Clear"))));
+      React.createElement("table", { className: "gamecontrols" },
+      React.createElement("button", { className: "gamecontrolbutton", onClick: () => this.startGen() }, "Start"),
+      React.createElement("button", { className: "gamecontrolbutton", onClick: () => this.stopGen() }, "Stop"),
+      React.createElement("button", { className: "gamecontrolbutton", onClick: () => this.seedRandom() }, "Randomize"),
+      React.createElement("button", { className: "gamecontrolbutton", onClick: () => this.seedBlank() }, "Clear"))));
 
 
 

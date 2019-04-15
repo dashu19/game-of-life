@@ -17,7 +17,7 @@
   
 }
 
-.board{
+.gameboard{
   white-space: nowrap;
   table-layout: fixed;
   width: 10px;
@@ -25,15 +25,15 @@
   margin: auto;
 }
 
-.row{
+.gamerow{
   padding: 0px;
 }
 
-.controls{
+.gamecontrols{
   margin: auto;
   white-space: nowrap;
 }
 
-.controlbutton{
+.gamecontrolbutton{
   margin: 3px;
 }
